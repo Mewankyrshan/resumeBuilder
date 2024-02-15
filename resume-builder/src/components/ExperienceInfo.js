@@ -8,18 +8,19 @@ function ExperienceInfo({ expanded, onToggle, onSubmit }) {
     const [endDate, setEndDate] = useState('');
     const [description, setDescription] = useState('');
 
-    const handleClick = () => {
+    const handleTitleClick = () => {
         onToggle(); // Call the function passed from the parent component.
     };
 
     const handleSubmit = () => {
+        
         onSubmit({ company, designation, startDate, endDate, description });
     };
 
     return (
-        <div className={`card-container ${expanded ? 'expanded' : 'collapsed'}`} onClick={handleClick}>
+        <div className={`card-container ${expanded ? 'expanded' : 'collapsed'}`}>
             <div className="card-content">
-                <h2 className="card-title">Experience Info</h2>
+                <h2 className="card-title" onClick={handleTitleClick}>Experience Info</h2>
                 <div className="form-group">
                     <label htmlFor="company">Company</label><br />
                     <input className="input-group" type="text" id="company" name="company" onChange={(e) => setCompany(e.target.value)} />

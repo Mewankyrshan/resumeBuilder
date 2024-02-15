@@ -6,7 +6,7 @@ function EducationInfo({ expanded, onToggle, onSubmit }) {
     const [department, setDepartment] = useState('');
     const [year, setYear] = useState('');
 
-    const handleClick = () => {
+    const handleTitleClick = () => {
         onToggle(); // Call the function passed from the parent component.
     };
 
@@ -15,9 +15,9 @@ function EducationInfo({ expanded, onToggle, onSubmit }) {
     };
 
     return (
-        <div className={`card-container ${expanded ? 'expanded' : 'collapsed'}`} onClick={handleClick}>
+        <div className={`card-container ${expanded ? 'expanded' : 'collapsed'}`}>
             <div className="card-content">
-                <h2 className="card-title">Education Info</h2>
+                <h2 className="card-title" onClick={handleTitleClick}>Education Info</h2>
                 <div className="form-group">
                     <label htmlFor="school">School/College/University</label><br />
                     <input className="input-group" type="text" id="school" name="school" onChange={(e) => setSchool(e.target.value)} />
