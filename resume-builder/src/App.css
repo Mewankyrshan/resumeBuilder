@@ -1,0 +1,20 @@
+/* App.css */
+
+.App-container {
+  display: flex;
+}
+
+.App {
+  flex: 1; /* Takes up equal space */
+  display: flex;
+  flex-direction: column; /* Aligns children vertically */
+  align-items:flex-end; /* Centers children horizontally */
+  /* justify-content: center; Centers children vertically */
+}
+
+
+.App-result {
+  flex: 1; /* Fixed width for App-result */
+  height: 100vh;
+  background-color: lightgray; /* Just for visualization */
+}
