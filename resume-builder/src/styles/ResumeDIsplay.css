@@ -1,0 +1,47 @@
+.resume-display {
+    background-color: white;
+    margin: auto; /* Center the container horizontally */
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    width: 794px; /* Width of A4 paper in pixels (210mm * 3.78px) */
+    height: 1122px; /* Height of A4 paper in pixels (297mm * 3.78px) */
+}
+
+/* When the viewport width is less than 794px (width of A4 paper in pixels) */
+@media (max-width: 794px) {
+    .resume-display {
+        width: 100vw; /* Make the width equal to 100% of the viewport width */
+        height: calc(100vw * 1.414); /* Adjust height to maintain A4 aspect ratio (1.414 = 297mm/210mm) */
+        margin-top: 0; /* Adjust top margin if necessary */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Additional media query for very small heights */
+@media (max-height: 1122px) {
+    .resume-display {
+        height: 100vh; /* Make the height equal to 100% of the viewport height */
+        width: calc(100vh * 0.707); /* Adjust width to maintain A4 aspect ratio (0.707 = 210mm/297mm) */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+.resume-header {
+    background-color: lightblue;
+    height: 25%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    /* margin-top: -30px; */
+
+}
+
+.header-flex {
+    display: flex;
+    
+}
+
+.full-name {
+    color: white;
+    text-align: center;
+}

@@ -14,7 +14,7 @@
 
 
 .App-result {
-  flex: 1; /* Fixed width for App-result */
+  flex: 2; /* Fixed width for App-result */
   height: 100vh;
   background-color: lightgray; /* Just for visualization */
 }

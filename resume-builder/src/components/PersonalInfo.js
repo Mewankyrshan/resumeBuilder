@@ -5,9 +5,10 @@ function PersonalInfo({ onSubmit }) {
     const [fullName, setFullName] = useState('');
     const [contactNumber, setContactNumber] = useState('');
     const [email, setEmail] = useState('');
+    const [location, setLocation] = useState('');
 
     const handleSubmit = () => {
-        onSubmit({ fullName, contactNumber, email });
+        onSubmit({ fullName, contactNumber, email, location });
     };
 
     return (
@@ -25,6 +26,10 @@ function PersonalInfo({ onSubmit }) {
                 <div className="form-group">
                     <label htmlFor="email">Email</label><br />
                     <input className="input-group" type="email" id="email" name="email" onChange={(e) => setEmail(e.target.value)} />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="location">Location</label><br />
+                    <input className="input-group" type="text" id="location" name="location" onChange={(e) => setLocation(e.target.value)} />
                 </div>
                 <button type="button" onClick={handleSubmit}>Save</button>
             </div>

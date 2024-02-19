@@ -1,8 +1,9 @@
 import React from 'react';
+import "../styles/ResumeDIsplay.css";
 
 function ResumeDisplay({ personalData, educationData, experienceData }) {
   return (
-    <div className="resume-display">
+    /*<div className="resume-display">
       <h2>Resume Preview</h2>
       <div className="resume-section">
         <h3>Personal Information</h3>
@@ -30,6 +31,30 @@ function ResumeDisplay({ personalData, educationData, experienceData }) {
           <p>No experience information provided.</p>
         )}
       </div>
+    </div>*/
+    <div className='resume-display'>
+      <div className='resume-header'>
+        <h3 className='full-name'>{personalData.fullName}</h3>
+        <div className='header-flex'>
+          <p className='contact-number'>{personalData.contactNumber}</p>
+          <hr />
+          <p className='email'>{personalData.email}</p>
+          <hr />
+          <p className='location'>{personalData.location}</p>
+        </div>
+      </div>
+      <hr />
+      <div className='resume-body'>
+        <div className='education-section'>
+          <h2>Education</h2>
+        </div>
+        <hr />
+        <div className='experience-section'>
+          <h2>Experience</h2>
+        </div>
+      </div>
+      <div className='resume-footer'></div>
+
     </div>
   );
 }

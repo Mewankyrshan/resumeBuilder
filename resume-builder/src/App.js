@@ -6,10 +6,12 @@ import ExperienceInfo from './components/ExperienceInfo';
 import ResumeDisplay from './components/ResumeDisplay';
 
 function App() {
+
   const [expandedSection, setExpandedSection] = useState('');
   const [personalData, setPersonalData] = useState({});
   const [educationData, setEducationData] = useState({});
   const [experienceData, setExperienceData] = useState({});
+  
 
   const handleToggle = (section) => {
     setExpandedSection(section === expandedSection ? '' : section);
@@ -26,6 +28,8 @@ function App() {
   const handleExperienceInfoSubmit = (data) => {
     setExperienceData(data);
   };
+
+
 
   return (
     <div className="App-container">
