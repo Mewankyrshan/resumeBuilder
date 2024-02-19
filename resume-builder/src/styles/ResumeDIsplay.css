@@ -2,6 +2,7 @@
     background-color: white;
     margin: auto; /* Center the container horizontally */
     padding: 0;
+    padding-left: 0;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     width: 794px; /* Width of A4 paper in pixels (210mm * 3.78px) */
     height: 1122px; /* Height of A4 paper in pixels (297mm * 3.78px) */
@@ -13,7 +14,6 @@
         width: 100vw; /* Make the width equal to 100% of the viewport width */
         height: calc(100vw * 1.414); /* Adjust height to maintain A4 aspect ratio (1.414 = 297mm/210mm) */
         margin-top: 0; /* Adjust top margin if necessary */
-        padding: 10px; /* Adjust padding for smaller screens */
     }
 }
 
@@ -22,26 +22,40 @@
     .resume-display {
         height: 100vh; /* Make the height equal to 100% of the viewport height */
         width: calc(100vh * 0.707); /* Adjust width to maintain A4 aspect ratio (0.707 = 210mm/297mm) */
-        padding: 10px; /* Adjust padding for smaller screens */
     }
 }
 
 .resume-header {
     background-color: lightblue;
-    height: 25%;
+    height: 16%;
     width: 100%;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     /* margin-top: -30px; */
 
 }
 
 .header-flex {
     display: flex;
-    
+    justify-content: center; /* Horizontally center the items */
+    align-items: center; /* Vertically center the items */
 }
+
 
 .full-name {
     color: white;
     text-align: center;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    height: 40%;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    padding-top: 16px;
+}
+
+hr {
+    margin-left: 2%;
+    margin-right: 2%;
 }
