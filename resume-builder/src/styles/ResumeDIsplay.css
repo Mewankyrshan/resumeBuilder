@@ -26,7 +26,7 @@
 }
 
 .resume-header {
-    background-color: lightblue;
+    background-color: darkslateblue;
     height: 16%;
     width: 100%;
     padding: 0;
@@ -53,6 +53,15 @@
     font-size: 2rem;
     margin-bottom: 0px;
     padding-top: 16px;
+}
+
+.section-header {
+    text-align: center;
+    color: black;
+    background-color: grey;
+    width:90%;
+    margin-left: 5%;
+    opacity: 50%;
 }
 
 hr {

@@ -43,14 +43,16 @@ function ResumeDisplay({ personalData, educationData, experienceData }) {
           <p className='location'>{personalData.location}</p>
         </div>
       </div>
-      <hr />
+      
       <div className='resume-body'>
         <div className='education-section'>
-          <h2>Education</h2>
+          <h2 className='section-header'>Education</h2>
+          <div className='education-flex'></div>
         </div>
-        <hr />
+        
         <div className='experience-section'>
-          <h2>Experience</h2>
+          <h2 className='section-header'>Experience</h2>
+          <div className='experience-flex'></div>
         </div>
       </div>
       <div className='resume-footer'></div>
