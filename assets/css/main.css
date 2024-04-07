@@ -137,9 +137,10 @@ a{
 .navbar-toggler-btn{ 
     display: none; /* No functionality, hidden for now.*/
 }
+/* 
 .navbar-brand-text{
     display: none;
-}
+} */
 
 
 /* buttons */
