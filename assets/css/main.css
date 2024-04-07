@@ -134,6 +134,14 @@ a{
     background-color: var(--clr-dark);
 }
 
+.navbar-toggler-btn{ 
+    display: none; /* No functionality, hidden for now.*/
+}
+.navbar-brand-text{
+    display: none;
+}
+
+
 /* buttons */
 .btn{
     font-size: 14.5px;
