@@ -2,8 +2,6 @@
 
 Using React.js
 
-Visit site at https://mewankyrshan.github.io/resumeBuilder/
-
 ## Overview
 
 The Resume Builder Web App is a simple yet powerful tool for creating professional resumes online. With a user-friendly interface and intuitive design, users can easily create, customize, and download their resumes in various formats.
