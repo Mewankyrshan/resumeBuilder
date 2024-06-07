@@ -20,7 +20,7 @@ The Resume Builder Web App is a simple yet powerful tool for creating profession
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/yourusername/resume-builder.git`
+1. Clone the repository: `git clone https://github.com/Mewankyrshan/resume-builder.git`
 2. Navigate to the project directory: `cd resume-builder`
 3. Open `index.html` in your web browser.
 
